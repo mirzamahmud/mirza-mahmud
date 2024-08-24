@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "mirzamahmud-95558"
-  }
+    "default": "mirzamahmud-95558",
+    "staging": "mirzamahmud-95558"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
