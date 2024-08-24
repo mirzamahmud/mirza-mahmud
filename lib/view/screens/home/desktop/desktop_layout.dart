@@ -7,6 +7,7 @@ import 'package:mirza_mahmud/utils/image/app_images.dart';
 import 'package:mirza_mahmud/view/screens/home/controller/home_controller.dart';
 import 'package:mirza_mahmud/view/screens/home/desktop/inner_widgets/desktop_about_section.dart';
 import 'package:mirza_mahmud/view/screens/home/desktop/inner_widgets/desktop_home_section.dart';
+import 'package:mirza_mahmud/view/screens/home/desktop/inner_widgets/desktop_projects_section.dart';
 import 'package:mirza_mahmud/view/screens/home/desktop/inner_widgets/desktop_skill_section.dart';
 import 'package:mirza_mahmud/view/widgets/buttons/custom_elevated_button.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -193,10 +194,9 @@ class DesktopScreenLayout extends StatelessWidget {
                 
                         // todo -> portfolio section
                         SizedBox(
-                          height: 900,
                           width: MediaQuery.of(context).size.width,
                           key: controller.navigatorList[3].navigatorKey,
-                          child: const Text("Portfolios"),
+                          child: const DesktopProjectSection(),
                         ),
                 
                         // todo -> contact me section

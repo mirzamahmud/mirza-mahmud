@@ -9,7 +9,7 @@ class HomeController extends GetxController{
     HomeNavigatorModel(navigatorTitle: "HOME", navigatorKey: GlobalKey()),
     HomeNavigatorModel(navigatorTitle: "ABOUT", navigatorKey: GlobalKey()),
     HomeNavigatorModel(navigatorTitle: "SKILLS", navigatorKey: GlobalKey()),
-    HomeNavigatorModel(navigatorTitle: "PORTFOLIOS", navigatorKey: GlobalKey()),
+    HomeNavigatorModel(navigatorTitle: "PROJECTS", navigatorKey: GlobalKey()),
     HomeNavigatorModel(navigatorTitle: "Contact Me", navigatorKey: GlobalKey()),
   ];
 

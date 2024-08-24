@@ -84,7 +84,7 @@ class DesktopHomeSection extends StatelessWidget {
                   ),
                   const Gap(4),
                   Text(
-                    "Flutter Developer",
+                    "Mobile App Developer",
                     style: GoogleFonts.nunito(
                         color: AppColors.colorRoyalBlue,
                         fontSize: 64,
@@ -93,8 +93,8 @@ class DesktopHomeSection extends StatelessWidget {
                   ),
                   const Gap(12),
                   Text(
-                    "I'm enthusiastic about developing Mobile Applications and who loves to code. With experience in Flutter & Firebase. "
-                        "Flutter is great for Mobile application development for both Android and iOS. "
+                    "I'm enthusiastic about developing Mobile Applications and who loves to code. With experience in Kotlin, Flutter & Firebase. "
+                        "Flutter is great for cross-platform mobile application development for both Android and iOS. "
                         "I like to use Flutter for my work.",
                     style: GoogleFonts.nunito(
                         color: AppColors.colorBlack.withOpacity(0.6),
@@ -123,10 +123,10 @@ class DesktopHomeSection extends StatelessWidget {
                       CustomElevatedButton(
                           buttonWidth: 200,
                           onPressed: () async{
-                            // final Uri url = Uri.parse("https://shorturl.at/tvCJQ");
-                            // if(!await launchUrl(url, mode: LaunchMode.inAppBrowserView)){
-                            //   throw Exception('Could not launch $url');
-                            // }
+                            final Uri url = Uri.parse("https://shorturl.at/piM3q");
+                            if(!await launchUrl(url, mode: LaunchMode.inAppBrowserView)){
+                              throw Exception('Could not launch $url');
+                            }
                           },
                           buttonText: "Hire Me Now"
                       ),
