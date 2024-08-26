@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
@@ -65,51 +66,27 @@ class DesktopProjectSection extends StatelessWidget {
                   mainAxisSpacing: 16,
                   crossAxisSpacing: 16,
                   childAspectRatio: 1,
-                  mainAxisExtent: 500
+                  mainAxisExtent: 400
                 ),
                 itemBuilder: (context, index) => Container(
-                  width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height,
+                  width: MediaQuery.of(context).size.width,
+                  alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    color: AppColors.colorAsh,
-                    borderRadius: BorderRadius.circular(16)
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Container(
-                        width: MediaQuery.of(context).size.width,
-                        height: 350,
-                        decoration: const BoxDecoration(
-                            color: AppColors.colorBlack,
-                            borderRadius: BorderRadius.vertical(top: Radius.circular(16))
-                        ),
+                    borderRadius: BorderRadius.circular(16),
+                    image: const DecorationImage(image: AssetImage("assets/projects/ezyrack.png"), fit: BoxFit.fill),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Colors.black12,
+                        offset: Offset(2, 2),
+                        blurRadius: 20,
                       ),
-                      Padding(
-                        padding: const EdgeInsetsDirectional.symmetric(horizontal: 16, vertical: 16),
-                        child: Row(
-                          children: [
-                            Flexible(
-                              child: Text(
-                                "There are many variations of passages of Lorem Ipsum available, "
-                                    "but the majority have suffered alteration in some form, by injected humour, "
-                                    "or randomised words which don't look even slightly believable. "
-                                    "If you are going to use a passage of Lorem Ipsum, "
-                                    "you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-                                overflow: TextOverflow.ellipsis,
-                                maxLines: 4,
-                                style: GoogleFonts.nunito(
-                                    color: AppColors.colorBlack.withOpacity(0.6),
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w500
-                                ),
-                              ),
-                            )
-                          ],
-                        )
+                      BoxShadow(
+                        color: Colors.black12,
+                        offset: Offset(-2, -2),
+                        blurRadius: 20,
                       )
-                    ],
+                    ]
                   ),
                 )
               ),
