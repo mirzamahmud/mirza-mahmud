@@ -22,6 +22,7 @@ class DesktopScreenLayout extends StatelessWidget {
         return Scaffold(
           backgroundColor: AppColors.colorWhite,
           body: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               // todo -> navigation menu
               Container(
@@ -133,22 +134,22 @@ class DesktopScreenLayout extends StatelessWidget {
                               border: Border.all(color: AppColors.colorRoyalBlue, width: 1)
                             ),
                             child: Text(
-                                "Pub Packages",
-                                textAlign: TextAlign.center,
-                                style: GoogleFonts.poppins(
-                                    color: AppColors.colorRoyalBlue,
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w500
-                                ),
-                              )
+                              "Pub Packages",
+                              textAlign: TextAlign.center,
+                              style: GoogleFonts.poppins(
+                                color: AppColors.colorRoyalBlue,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w500
+                              ),
+                            )
                           ),
                         ),
                         const Gap(16),
                         CustomElevatedButton(
-                            buttonHeight: 48,
-                            buttonWidth: 200,
-                            onPressed: () => controller.scrollToSection(controller.navigatorList[4].navigatorKey.currentContext!),
-                            buttonText: controller.navigatorList[4].navigatorTitle
+                          buttonHeight: 48,
+                          buttonWidth: 200,
+                          onPressed: () => controller.scrollToSection(controller.navigatorList[4].navigatorKey.currentContext!),
+                          buttonText: controller.navigatorList[4].navigatorTitle
                         ),
                       ],
                     )
